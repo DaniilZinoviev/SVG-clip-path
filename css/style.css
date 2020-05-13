@@ -38,6 +38,12 @@ svg {
           clip-path: url("#clipPath");
 }
 
+.wrapper nav .closeBtn {
+  float: right;
+  font-size: 2em;
+  cursor: pointer;
+}
+
 .wrapper nav ul li a {
   color: white;
   text-decoration: none;

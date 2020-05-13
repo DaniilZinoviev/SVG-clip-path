@@ -21,6 +21,7 @@
 
     <div class="wrapper">
         <nav>
+            <a class="closeBtn" id="close">&times;</a>
             <ul>
                 <li><a href="#">Holly</a></li>
                 <li><a href="#">Balls</a></li>
@@ -38,10 +39,14 @@
 
     <script>
         var tl = new TimelineMax({paused: true});
-        var btn = document.getElementById('open');
+        var open = document.getElementById('open');
+        var close = document.getElementById('close');
 
-        btn.addEventListener('click', function(e) {
+        open.addEventListener('click', function(e) {
             tl.play();
+        });
+        close.addEventListener('click', function(e) {
+            tl.reverse();
         });
 
         tl.from('nav', 1, {
